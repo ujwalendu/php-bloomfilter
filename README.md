@@ -4,9 +4,8 @@ php-bloomfilter
 A php extension for bloom filter
 
 You need to have php-devel installed, to build this extension.
-
-git clone https://github.com/ujwalendu/php-bloomfilter.git
 ```
+git clone https://github.com/ujwalendu/php-bloomfilter.git
 cd php-bloomfilter
 phpize
 ./configure
