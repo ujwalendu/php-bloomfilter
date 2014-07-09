@@ -399,9 +399,6 @@ PHP_FUNCTION(bloomfilter_stats) {
     _bloomfilter_stats(&bloomfilter);
 }
 
-
-
-
 /*
  * Local variables:
  * tab-width: 4

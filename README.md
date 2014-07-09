@@ -23,3 +23,24 @@ bloomfilter.data_file = provide absolute path of your data file which contains t
 bloomfilter.entries_count = This is total number of entries you want to be present in bloom filter.
 bloomfilter.error_prob = This is the probability of error, for false positives, you want. 
 ```
+
+
+The following functions are currently exposed 
+
+```php
+<?php
+
+// This is to add to the bloom filter
+bloomfilter_add("Hello");
+bloomfilter_add("World");
+bloomfilter_add("System");
+bloomfilter_add("Virus");
+bloomfilter_add("aiodo");
+
+
+// This is to check
+
+bloomfilter_check("hello"); // returns false
+bloomfilter_check("Hello"); // returns true. But this may be a false positive
+bloomfilter_check("sys");   // returns false
+```
